@@ -1,23 +1,23 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block title %}
-Contacto - Duranjo
+Contacto - Tecnoalimentos AM2
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'css/contacto.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/homepage/contacto.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'js/propios/selectable.js' %}"></script>
 {% endblock %}
 {% block contenido %}
-	<section class="fondoContacto">
-		<div class="wrapper">
-		<div class="tituloStyle">
+<section class="contacto">
+	<img src="{% static 'img/contactoportada.jpg' %}" class="portada" alt="proveemos materia prima"/>
+	<div class="wrapper">
+		<div class="titulo2">
+			<div class="icono"></div>
 			<h2>Contacto</h2>
-			<div class="lineatitulo"></div>
-		</div>		
+		</div>	
 		{% if success %}
 		<div class="mensajeenviado">
 			<div class="enviado">Su mensaje ha sido enviado correctamente, pronto nos pondremos en contacto con usted.</div>
@@ -29,43 +29,42 @@ Contacto - Duranjo
             Por favor corregir los errores debajo.
         </p>
    		{% endif %}
-		<form action="#" method="POST">
+   		<div class="cuadroverde">
+		<form class="contactoform" action="#" method="POST">
 			{% csrf_token %}
-			<div class="campo">
-				{{ field.errors }}
-				<label for="nombre">Nombre:</label>
-				{{ form.nombre }}
-				{{ form.nombre.errors }}
+			<div class="contactoizquierda">
+				<div class="campo">
+					{{ field.errors }}
+					<label for="nombre">Nombre:</label>
+					{{ form.nombre }}
+					{{ form.nombre.errors }}
+				</div>
+				<div class="campo">				
+					{{ field.errors }}
+					<label for="email">Correo Electrónico:</label>
+					{{ form.email }}
+					{{ form.email.errors }}
+				</div>
+				<div class="campo">
+					{{ field.errors }}
+					<label for="telefono">Teléfono:</label>
+					{{ form.telefono }}
+					{{ form.telefono.errors }}
+				</div>
 			</div>
-			<div class="campo">				
-				{{ field.errors }}
-				<label for="email">Correo Electrónico:</label>
-				{{ form.email }}
-				{{ form.email.errors }}
-			</div>
-			<div class="campo">
-				{{ field.errors }}
-				<label for="telefono">Teléfono:</label>
-				{{ form.telefono }}
-				{{ form.telefono.errors }}
-			</div>
-			<div class="textareaDescripcion">
-				{{ field.errors }}
-				<label for="texto">Breve descripción de su proyecto: </label>
-				{{ form.texto }}
-				{{ form.texto.errors }}
+			<div class="contactoderecha">
+				<div class="textareaDescripcion">
+					{{ field.errors }}
+					<label for="texto">Mensaje: </label>
+					{{ form.texto }}
+					{{ form.texto.errors }}
+				</div>
 			</div>
 			<div class="botonEnviar">
 				<input type="submit">
 			</div>
 		</form>
 		{% endif %}
-		<div class="tituloStyle">
-			<h2>Información de contacto</h2>
-			<div class="lineatitulo"></div>
-		</div>	
-		<section class="infoContacto">
-		</section>
 	</div>
 	</section>
 	<!-- FACEBOOK SCRIPT -->

@@ -6,7 +6,7 @@
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<meta name="keywords" content="">
+<meta name="keywords" content="Materia prima industria alimentica Venezuela granotec tecnoalimentos am2">
 <meta name="author" content="duranjo web c.a.">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -14,6 +14,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico">
 <title>{% block title %} {% endblock%}</title>
 <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Tenor+Sans' rel='stylesheet' type='text/css'>
 {% block css %}
 {% endblock %}
 {% block js %}
@@ -31,9 +33,20 @@
 	  ga('send', 'pageview');
 	</script> -->
 	<header id="home" class="cabecera">
-		<div class="wrapper">				
+		<div class="wrapper">	
+		<div class="logo">
+			<img src="{% static 'img/logotecnoalimentos.png' %}" alt="Logo Tecnoalimentos am2">
+		</div>					
 			<nav class="barraNavegacion">
-				{% block navi %} {% endblock%}
+				{% block navi %}
+					<ul>
+						<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
+						<li class="index"><a href="{% url 'homepageaboutus' %}">Quienes Somos</a></li>
+						<li class="products"><a href="{% url 'homepageproducts' %}">Productos y Soluciones</a></li>
+						<li class="services"><a href="/blog">Blog</a></li>
+						<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
+					</ul>				
+			{% endblock %}
 			</nav>
 		</div>
 	</header>
@@ -43,12 +56,39 @@
 	{% block clear %} {% endblock %}
 	<footer>
 		{% block footer %}{% endblock%}
-		<div class="wrapper">
-			<div class="footer-der">
-			</div>
-			<div class="footer-izq">
-			</div>		  
+		<div class="footerarriba">	
+			<div class="wrapper">		
+				<ul class="menufooter">
+					<li><a href="{% url 'homepageindex' %}">Inicio</a></li>
+					<li><a href="{% url 'homepageaboutus' %}">Quienes Somos</a></li>
+					<li><a href="{% url 'homepageproducts' %}">Productos y Soluciones</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="{% url 'homapagecontact' %}">Contacto</a></li>
+				</ul>
+			</div>	
 		</div>
+		<div class="wrapper">	
+			<div class="footermedio">	
+					<div class="columna">
+						<div class="telefono">Tel: +58-424 6441619</div>
+						<div class="email">info@tecnoalimentosam2.com</div>
+						<div class="direccion">Maracaibo, Edo. Zulia. Venezuela.</div>
+					</div>				
+					<div class="columna logofooter">
+						<img src="{% static 'img/logotecnoalimentos.png' %}" alt="Logo Tecnoalimentos am2">
+					</div>		
+				<div class="columna redes">
+					<a href="https://twitter.com/"><div class="twitterlogo"></div></a>
+					<a href="https://www.facebook.com/"><div class="facebook"></div></a>
+					<a href="#"><div class="googleplus"></div></a>
+					<a href="http://www.linkedin.com/"><div class="linkedin"></div></a>
+					<p>J-31230199-6</p>
+				</div>								
+			</div>	
+			<div class="copyright">
+				Tecnoalimentos AM2 © Copyright 2014. Todos los derechos reservados.</span>
+			</div>
+		</div>	  
 	</footer>
 </body>
 </html>

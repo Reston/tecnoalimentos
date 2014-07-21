@@ -1,19 +1,58 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block title %}
-Trabajos realizados - Duranjo
+Sobre Tecnoalimentos AM2
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'css/quienesomos.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/homepage/quienesomos.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 {% endblock %}
 {% block contenido %}
 <section class="quienessomos">
-	<div class="wrapper">
-		<div class="tituloStyle"><h2>libre</h2></div>
-	</div>
+	<img src="{% static 'img/portada.jpg' %}" class="portada" alt="proveemos materia prima"/>
+		<div class="wrapper">
+		<div class="titulo2">
+			<div class="icono"></div>
+			<h2>Sobre Tecnoalimentos AM2</h2>
+		</div>
+			<div class="cuadroverde primero">
+				<div class="mision">
+					<div class="izquierda">
+						<img src="{% static 'img/mision.png' %}" alt="proveemos materia prima"/>
+						<h3>Misión</h3>
+						<div class="lineaverde"></div>
+					</div>
+					<div class="derecha">
+						<p>Tecnoalimentos AM2 C,A. tiene la misión de proveer soluciones integrales adecuadas a las necesidades de nuestros Clientes en diferentes disciplinas en cuanto a requerimientos de Productos,  Materias Primas y Servicios Industriales de la más alta calidad. </p>
+					</div>				
+				</div>
+			</div>
+			<div class="cuadroverde">
+				<div class="vision">
+					<div class="izquierda">
+						<p>Ofrecer productos, aditivos y materias primas de la mejor calidad para abastecer las cadenas de producción de alimentos de manera segura y confiable a la población.</p>
+					</div>
+					<div class="derecha">
+						<img src="{% static 'img/vision.png' %}" alt="proveemos materia prima"/>
+						<h3>Visión</h3>
+						<div class="lineaverde"></div>
+					</div>				
+				</div>
+			</div>
+			<div class="cuadroverde">
+				<div class="valores">
+					<div class="izquierda">
+						<img src="{% static 'img/valores.png' %}" alt="proveemos materia prima"/>
+						<h3>Valores</h3>
+						<div class="lineaverde"></div>
+					</div>
+					<div class="derecha">
+						<p>Entre los valores presentes en nuestra institución con los Clientes y con las Empresas representadas podemos mencionar:</p>
+					</div>				
+				</div>	
+			</div>						
+		</div>
 </section>
 {% endblock%}

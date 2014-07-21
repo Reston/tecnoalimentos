@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+Productos y Soluciones Tecnoalimentos
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/homepage/products.css' %}">
+{% endblock %}
+{% block js %}
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% endblock %}
+{% block contenido %}
+<section class="productos">
+	<img src="{% static 'img/portadaproducto.jpg' %}" class="portada" alt="proveemos materia prima"/>
+	<div class="wrapper">
+		<div class="titulo2">
+			<div class="icono"></div>
+			<h2>Productos y Soluciones</h2>
+		</div>	
+	</div>		
+		<div class="wrapper">
+			<div class="lineasdecolores">
+				<div class="linea verde"></div>
+				<div class="linea gris"></div>
+				<div class="linea verdeclaro"></div>
+			</div>
+			<h3> Materias Primas para la Industria de Alimentos</h3>
+			<div class="lineasdecolores">
+				<div class="linea verde"></div>
+				<div class="linea gris"></div>	
+				<div class="linea verdeclaro"></div>
+			</div>	
+			<h4> Proveemos soluciones a las industrias de:</h4>	
+				<div class="industria">
+					<img src="{% static 'img/molineria.png' %}" alt="proveemos materia prima"/>
+					<p>Planificación y Molinería</p>
+				</div>
+				<div class="industria">
+					<img src="{% static 'img/lactea.png' %}" alt="proveemos materia prima"/>
+					<p>Láctea</p>
+				</div>
+				<div class="industria">
+					<img src="{% static 'img/carnico.png' %}" alt="proveemos materia prima"/>
+					<p>Cárnicos</p>
+				</div>	
+				<div class="industria">
+					<img src="{% static 'img/bebidas2.png' %}" alt="proveemos materia prima"/>
+					<p>Bebidas</p>
+				</div>
+				<h4>Nuestra Lista de Productos Incluyen:</h4>
+				<div class="columnal">
+					<ul>
+						<li>Mezclas de Polvos Alimenticios y Mejoradores para Harinas</li>
+						<li>Alimentos base para Cereales</li>
+						<li>Bebidas Lácteas</li>
+					</ul>
+				</div>	
+				<div class="columnal">
+					<ul>
+						<li>Gelatinas</li>
+						<li>Pudines</li>
+						<li>Mezclas a base de vitaminas y proteínas</li>
+					</ul>
+				</div>						
+				<div class="columnal">
+					<ul>
+						<li>Núcleos y Bloques Vitamínicos</li>
+						<li>Materias primas para procesar Lácteos</li>
+						<li>Quesos, Yogurt, Mantequilla, Sueros lácteos</li>
+					</ul>
+				</div>										
+			</div>				
+		</div>
+</section>
+{% endblock%}

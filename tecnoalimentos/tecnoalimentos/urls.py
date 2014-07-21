@@ -6,7 +6,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
 	# Examples:
 	# url(r'^$', 'tecnoalimentos.views.home', name='home'),
-	# url(r'^blog/', include('blog.urls')),
+	url(r'^blog/', include('zinnia.urls')),
+	url(r'^comments/', include('django.contrib.comments.urls')),	
 	url(r'^', include('tecnoalimentos.apps.homepage.urls')),
 	url(r'^admin/', include(admin.site.urls)),
 	# Uncomment the next line to enable the admin:

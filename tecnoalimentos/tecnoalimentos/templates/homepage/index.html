@@ -1,39 +1,145 @@
 {% extends "base.html" %}
 {% load staticfiles %}
-{% block head %} 
-<meta name="description" content="">
-{% endblock%}
 {% block title %}
-Duranjo Web
+TECNOALIMENTOS AM2
+{% endblock%}
+{% block head %} 
+<meta name="description" content="Tecnoalimentos AM2, C.A. es un confiable proveedor de materias primas para la industria de alimentos de Venezuela con el respaldo y representación exclusiva de firmas de primera línea.">
 {% endblock%}
 {% block css%}
 <link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+<link rel="stylesheet" href="{% static 'css/homepage/index.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/adquiridos/jquery.flexslider-min.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/adquiridos/back-top.js' %}"></script>
-{% endblock %}
-{% block navi %}
-		<ul>
-			<li class="index"><a href="{% url 'homepageindex' %}">Inicio</a></li>
-			<li class="works"><a href="{% url 'homepageworks' %}">Trabajos</a></li>
-			<li class="services"><a href="{% url 'homepageservices' %}">Servicios</a></li>
-			<li class="contact"><a href="{% url 'homapagecontact' %}">Contacto</a></li>
-		</ul>				
+
+
 {% endblock %}
 {% block clear %}{% endblock%}
 {% block contenido %}
 	<section class="bannerPrincipal">
-		<h1>Titulo importante</h1>
-		<div class="wrapper banner1">
+		<!--<h1>Incrementa tu productividad con Asprova</h1>-->
+		<div class="sliderPosition">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<p class="flex-caption">Somos Proveerdores de materia prima de la más alta calidad</p>
+						<img src="{% static 'img/portada.jpg' %}" alt="proveemos materia prima"/>
+						<p class="rifslider">J-31230199-6</p>
+					</li>
+					<li>
+						<p class="flex-caption">Somos Proveerdores de materia prima de la más alta calidad</p>
+						<img src="{% static 'img/portada3.jpg' %}" alt="proveemos materia prima"/>
+						<p class="rifslider">J-31230199-6</p>
+					</li>
+					<li>
+						<p class="flex-caption">Somos Proveerdores de materia prima de la más alta calidad</p>
+						<img src="{% static 'img/portada4.jpg' %}" alt="proveemos materia prima"/>
+						<p class="rifslider">J-31230199-6</p>
+					</li>	
+					<li>
+						<p class="flex-caption">Somos Proveerdores de materia prima de la más alta calidad</p>
+						<img src="{% static 'img/portada5.jpg' %}" alt="proveemos materia prima"/>
+						<p class="rifslider">J-31230199-6</p>
+					</li>															
+			 	</ul>
+			</div>		
 		</div>
 	</section>
-	<section class="ofrecemos">		
+	<section class="aboutus">
+		<div class="wrapper">	
+			<div class="titulo2">
+				<div class="icono"></div>
+				<h2>Sobre Tecnoalimentos AM2</h2>
+			</div>		
+		<div class="intro">
+			<p>Considerando las particularidades y especiales características que actualmente rigen el país, Tecnoalimentos AM2, C.A. se ha diferenciado por crear y aperturar espacios de oportunidades  para lograr abastecer y convertirnos en un aliado para las industrias, afianzándonos como un confiable proveedor de materias primas alimenticias con el respaldo y representación exclusiva de firmas de primera línea.</p>
+		</div>
+			<div class="greenbox">
+				<p>"Nuestro trabajo se basa en no vender productos, sino ayudar a obtener el mejor beneficio en su compra..."</p>
+			</div>		
 	</section>
-	<section class="aboutus">		
+
+	<section class="proveedor">
+		<div class="wrapper">
+			<div class="whitebox">
+				<p>Somos Representantes autorizados de </p>
+				<a href="http://www.granotec.com/" target="_blank"><img src="{% static 'img/granoteclogo.png' %}" alt="proveemos materia prima"/></a>
+			</div>
+		</div>	
 	</section>
-	<section class="infoContacto">
+	<section class="productos">
+		<div class="wrapper">
+			<div class="titulo2">
+				<div class="icono"></div>
+			</div>	
+			<div class="titulo2">
+				<h2>Industrias Alimenticias</h2>
+				<p>Ofrecemos productos y servicios a las distintas industrias alimenticias</p>
+				<div class="industria">
+					<img src="{% static 'img/molineria.png' %}" alt="proveemos materia prima"/>
+					<h3>Planificación y Molinería</h3>
+				</div>
+				<div class="industria">
+					<img src="{% static 'img/lactea.png' %}" alt="proveemos materia prima"/>
+					<h3>Láctea</h3>
+				</div>
+				<div class="industria">
+					<img src="{% static 'img/carnico.png' %}" alt="proveemos materia prima"/>
+					<h3>Cárnicos</h3>
+				</div>	
+				<div class="industria">
+					<img src="{% static 'img/bebidas2.png' %}" alt="proveemos materia prima"/>
+					<h3>Bebidas</h3>
+				</div>	
+				<a class="boton" href="#">Conocer Productos</a>							
+			</div>			
+		</div>
+	</section>
+	<section class="filosofia">
+		<div class="wrapper">
+			<div class="whitebox">
+				<p class="filosofiatit">Nuestra Filosofía</p>
+				<p class="filosofiasubtit" >En Tecnoalimentos AM2, C.A</p>
+				<p class="filosofiatxt">Es que nuestros clientes logren el máximo aprovechamiento de sus requerimientos en soluciones de abastecimiento para su industria, por esta razón hacemos especial énfasis en conocer personalmente sus necesidades y presentarle soluciones y alternativas que logren maximizar los resultados de su gestión. </p>
+			</div>
+		</div>	
+	</section>		
+	<section class="clientes">
+		<div class="wrapper">
+			<div class="titulo2">
+				<div class="icono"></div>
+				<h2>Clientes de Tecnoalimentos AM2</h2>
+				<div class="ccolum">
+					<img src="{% static 'img/monaca.jpg' %}" alt="Logo Monaca"/>
+					<img src="{% static 'img/alfonsorivas.jpg' %}" alt="logo alfonso rivas"/>
+				</div>
+				<div class="ccolum">
+					<img src="{% static 'img/zulimilk.jpg' %}" alt="logo zulimilk"/>
+					<img src="{% static 'img/disbelca.jpg' %}" alt="logo disbelca"/>
+				</div>
+				<div class="ccolum">
+					<img src="{% static 'img/genica.jpg' %}" alt="logo genica"/>
+					<img src="{% static 'img/afilca.jpg' %}" alt="logo dafilca"/>
+				</div>
+			</div>	
+		</div>	
 	</section>	
+	<!-- SLIDER INIT -->
+	<script>
+		$(document).ready(function() {
+		  $('.flexslider').flexslider({
+		  	slideshowSpeed: 3400,
+		  	// start: function(slider) {
+			//        slider.flexAnimate(slider.getTarget("next"));
+			//  }
+		  });
+		});
+	</script>
 	<!-- Google+ SCRIPT --> 
 		<!-- Place this tag after the last badge tag. -->
 		<script  async type="text/javascript">
@@ -56,8 +162,8 @@ Duranjo Web
 	<!-- TWITTER SCRIPT -->
 	<script async>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	
-	<!-- BACK TOP BOX -->
+	<!-- BACK TOP BOX 
 	<div id="back-top" class="back-top">
 		<a href="#home"><span>↑</span>Regresar arriba</a>
-	</div>
+	</div>-->
 {% endblock%}

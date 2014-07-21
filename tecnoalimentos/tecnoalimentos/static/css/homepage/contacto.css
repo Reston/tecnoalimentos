@@ -1,0 +1,84 @@
+.portada{
+	width: 100%;
+	height: 348px;
+}
+
+/*titulo inicio*/
+.icono{
+	display: inline-block;
+	width: 60px;
+	height: 38px;
+	background: url(../../img/icono.png);
+}
+.titulo2 {
+	text-align: center;
+}
+.titulo2 h2{
+	display: inline-block;
+}
+.contacto{
+	background: url(../../img/textura.jpg);
+	padding-bottom: 50px;
+}
+.contactoizquierda, .contactoderecha{
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+.contactoizquierda{
+	margin-right: 5%;
+}
+.cuadroverde{
+	display: inline-block;
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	height: 338px;
+	padding-top: 10px;
+	border: solid 1px #19A851;
+}
+.contactoform{
+	display: inline-block;
+	background-color: #FFF;
+	width: 97.5%;
+	height: 310px;
+}
+.contactoform label{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 9px;
+}
+.contactoform .campo input{
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	text-indent: 10px;
+	background: #EEE;
+	border: none;
+	color: #000;
+}
+.contactoderecha textarea{
+	width: 100%;
+	background: #EEE;
+	border: none;
+	color: #000;	
+}
+.campo{
+	margin: 15px 0 15px 0;
+}
+.textareaDescripcion label{
+	margin-top: 15px;
+}
+.botonEnviar{
+	text-align: right;
+	margin-right: 19px;
+	margin-top: 12px;
+}
+.botonEnviar input{
+	width: 120px;
+	padding: 5px;
+	background-color: #008000;
+	color: #FFF;
+	border: none;
+}

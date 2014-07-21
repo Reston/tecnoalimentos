@@ -1,1 +1,124 @@
 @charset 'utf-8';
+html, body{
+	margin: 0;
+	height: 100%;
+	background: white;
+	color: black;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+h2{
+	color: #686969;
+}
+
+
+.logo{
+	width: 25%;
+	float: left;
+	text-align: right;
+	padding: 1%;
+	height: 100px;
+}
+.logo img{
+	width: 250px;
+}
+.wrapper{
+	width: 960px;
+	height: 100%;
+	margin: 0 auto 0 auto;
+}
+/* Encabezado */
+.cabecera{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	height: 117px;
+	position: absolute;
+	z-index: 2;
+}
+nav{
+	float: left;
+	width: 71%;
+	vertical-align: top;
+	height: 100px;
+	padding: 1%;
+}
+nav select {
+  display: none;
+}
+nav > ul{
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+}
+nav li{
+	display: inline-block;
+	margin-right: 22px;
+	margin-left: 22px;
+	text-align: center;
+	font-size: 1em;
+}
+nav a{
+	text-decoration: none;
+	color: #000;
+}
+
+/* Fin Encabezado */
+
+
+
+/* Footer */
+
+.menufooter li{
+	display: inline-block;
+	width: 180px;
+	text-align: center;
+	font-size: 1em;
+	vertical-align: top;
+}
+.menufooter a{
+	text-decoration: none;
+	color: #FFF;
+}
+.footerarriba{
+	margin-top: -16px;
+	background-color: green;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+}
+.columna{
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.logofooter img{
+	width: 260px;
+}
+.copyright{
+	width: 100%;
+	text-align: center;
+}
+.twitterlogo, .facebook, .googleplus,.linkedin{
+	background: url(../img/redesiconos.png) no-repeat;
+	display: inline-block;
+	height: 32px;
+	width: 28px;	
+	background-size: 130px;
+}
+.twitterlogo{
+	background-position: 0;
+}
+.facebook{
+	background-position: -28px -2px;
+}
+.googleplus{
+	background-position: -56px 0;
+	width: 34px;
+}
+.linkedin{
+	background-position: -92px 0;
+	width: 34px;
+}

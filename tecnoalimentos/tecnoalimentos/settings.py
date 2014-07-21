@@ -47,6 +47,7 @@ SECRET_KEY = ')d^6&mffb-@^$h=#l7&dcld87c)#+#btrk@xhk39iqlfvv8wod'
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 1
 
 # Application definition
 
@@ -57,7 +58,20 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.comments',
+    'tagging',
+    'mptt',
+    'zinnia',
+    'tinymce',    
 )
+TEMPLATE_CONTEXT_PROCESSORS = (
+  'django.contrib.auth.context_processors.auth',
+  'django.core.context_processors.i18n',
+  'django.core.context_processors.request',
+  'django.core.context_processors.media',
+  'django.core.context_processors.static',
+  )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -82,9 +96,9 @@ TEMPLATE_DIRS = (
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-VE'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Caracas'
 
 USE_I18N = True
 

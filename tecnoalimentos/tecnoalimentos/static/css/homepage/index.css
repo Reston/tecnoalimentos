@@ -1,0 +1,214 @@
+/* Configuración slider */
+.flexslider{
+	background: #fff url(../../img/loader.gif) no-repeat center center !important;
+	height: auto;
+	margin: 0 !important;
+	border: none !important;
+	position: relative;
+}
+.slides{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.flexslider .slides img{
+	width: 100%;
+	max-height: 600px;
+}
+.flexslider .slides li{
+	height: 100%;
+}
+.flex-direction-nav a{
+	z-index: 10; 
+	visibility: hidden;
+}
+/*.flex-control-nav*/
+.flex-direction-nav{
+	display: none;
+}
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+.slides ul li{
+	text-decoration: none;
+}
+.flex-caption {
+	position: absolute;
+	left: 20%;
+	text-align: center;
+	right: 0;
+	bottom: 17%;
+	font-size: 3.7em;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	/* background: #000; */
+	/* background: rgba(0, 0, 0, 0.55); */
+	padding: 5px;
+	color: #E2E2E2;
+	width: 60%;
+	text-shadow: 6px 3px 3px #232020;
+	/* background: rgba(0, 0, 0, 0.55); */
+	filter: alpha(opacity=50);
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+}
+.rifslider{	
+	position: absolute;
+	left: 89%;
+	text-align: center;
+	right: 0;
+	font-size: 1.4em;
+	bottom: 12%;
+	text-shadow: 3px 2px 2px #000;
+	color: #E2E2E2;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/*titulo inicio*/
+.icono{
+	display: inline-block;
+	width: 100%;
+	height: 38px;
+	background: url(../../img/icono.png) no-repeat center;
+}
+.titulo2 {
+	text-align: center;
+}
+.titulo2 h2{
+	display: inline-block;
+}
+/* aboutus*/
+.aboutus{
+	margin-top: 30px;
+}
+.intro {
+	display: inline-block;
+	width: 55%;
+	text-align: justify;
+	margin-right: 24px;
+	margin-left: 6%;
+}
+.greenbox{
+	display: inline-block;
+	width: 27%;
+	padding: 0 15px;
+	color: #FFF;
+	font-size: 1.4em;
+	background-color: #19A851;
+}
+.imageHolder{
+	width: 100%;
+	height: 300px;
+}
+
+/*Proveedor*/
+.proveedor{
+	height: 374px;
+	width: 100%;
+	margin-top: 60px;
+}
+.proveedor p{
+	font-size: 1.4em;
+	color: #686969;
+}
+.proveedor .wrapper{
+	text-align: center;
+}
+.whitebox{
+	display: inline-block;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-top: 60px;
+	text-indent: 0;
+}
+.proveedor .whitebox{
+	height: 175px;
+	float: left;
+}
+/*Industrias*/
+.productos{
+	margin-top: 30px;
+}
+.industria{
+	display: inline-block;
+	width: 24%;
+}
+.boton{
+	display: block;
+	padding: 5px;
+	width: 165px;
+	margin: 0 auto;
+	background-color: #0D8242;
+	color: #FFF;
+	text-decoration: none;
+	margin-top: 10px;
+}
+.industria h3{
+	font-weight: normal;
+}
+/*filosofia*/
+.filosofia{
+	height: 322px;
+	width: 100%;
+	background: url(../../img/parallaximg.jpg);
+	margin-top: 60px;
+}
+.filosofia .whitebox{
+	height: 240px;
+	text-align: center;
+	float: left;
+}
+.filosofiatxt{
+	padding: 0 40px;
+	text-align: justify;
+}
+.filosofiatit{
+	font-size: 2em;
+	color: #686969;
+	margin-bottom: 2px;
+}
+.filosofiasubtit{
+	font-size: 1.3em;
+	color: #686969;
+}
+.proveedor, .filosofia {
+  height: 50vh;
+  text-indent: -9999px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  &:nth-child(2n) {
+    box-shadow: inset 0 0 1em #111;
+  }
+}
+
+.proveedor{
+  background-image: url(../../img/portada2.jpg);
+}
+.filosofia {
+	 background-image: url(../../img/parallaximg.jpg);
+}
+
+/* clientes */
+.clientes{
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+.clientes h2{
+	width: 100%;
+}
+.clientes img{
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.ccolum{
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}

@@ -1,0 +1,68 @@
+.portada{
+	width: 100%;
+	height: 348px;
+}
+
+/*titulo inicio*/
+.icono{
+	display: inline-block;
+	width: 60px;
+	height: 38px;
+	background: url(../../img/icono.png);
+}
+.titulo2 {
+	text-align: center;
+}
+.titulo2 h2{
+	display: inline-block;
+}
+
+.quienessomos{
+	background: url(../../img/textura.jpg);
+	padding-bottom: 50px;
+}
+.izquierda, .derecha{
+	display: inline-block;
+	vertical-align: top;
+}
+.mision, .vision, .valores{
+	display: inline-block;
+	background-color: #FFF;
+	width: 97.5%;
+	height: 210px;
+}
+.mision .izquierda, .vision .derecha, .valores .izquierda{
+	width: 205px;
+}
+.mision .derecha, .vision .izquierda, .valores .derecha{
+	width: 70%;
+}
+
+.izquierda img, .derecha img{
+	margin-top: -46px;
+}
+.cuadroverde{
+	display: inline-block;
+	width: 100%;
+	margin-top: 60px;
+	text-align: center;
+	height: 220px;
+	padding-top: 10px;
+	border: solid 1px #19A851;
+}
+.primero{
+	margin-top: 77px !important;
+}
+.mision p, .vision p, .valores p{
+	padding: 0 55px;
+	text-align: justify;
+	line-height: 27px;
+	margin-top: 50px;
+}
+.lineaverde{
+	display: inline-block;
+	width: 157px;
+	height: 13px;
+	background-color: #19A851;
+	margin-top: 6px;
+}

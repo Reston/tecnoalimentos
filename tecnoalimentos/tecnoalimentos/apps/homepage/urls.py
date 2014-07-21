@@ -3,7 +3,7 @@ from django.conf.urls import patterns, url
 urlpatterns = patterns(
 	'tecnoalimentos.apps.homepage.views',
 	url(r'^$', 'index', name="homepageindex"),
-	url(r'^trabajos/$', 'works', name="homepageworks"),
-	url(r'^servicios/$', 'services', name="homepageservices"),
+	url(r'^quienessomos/$', 'aboutus', name="homepageaboutus"),
 	url(r'^contacto/$', 'contact', name="homapagecontact"),
+	url(r'^productosysoluciones/$', 'products', name="homepageproducts"),
 )
