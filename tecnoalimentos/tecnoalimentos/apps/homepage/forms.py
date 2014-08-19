@@ -4,9 +4,11 @@ from django import forms
 
 
 class contactForm(forms.Form):
-	nombre = forms.CharField(widget=forms.TextInput(attrs={'placeholder': ' Su nombre'}))
-	email = forms.EmailField(widget=forms.TextInput(attrs={'placeholder': ' nick@email.com'}))
-	telefono = forms.CharField(widget=forms.TextInput(attrs={'placeholder': ' Su Número de teléfono'}))
+	nombre = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Su nombre'}))
+	pais = forms.CharField(widget=forms.TextInput(attrs={'placeholder': u'Ubicación de la empresa'}))
+	email = forms.EmailField(widget=forms.TextInput(attrs={'placeholder': 'nick@email.com'}))
+	empresa = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Empresa donde trabaja'}))
+	telefono = forms.CharField(widget=forms.TextInput(attrs={'placeholder': '58-999-9999999', 'type': 'tel'}))
 	texto = forms.CharField(widget=forms.Textarea)
 
 	def clean_asunto(self):

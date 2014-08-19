@@ -51,8 +51,20 @@ Contacto - Tecnoalimentos AM2
 					{{ form.telefono }}
 					{{ form.telefono.errors }}
 				</div>
+				<div class="campo">
+					{{ field.errors }}
+					<label for="id_empresa">Empresa:</label>
+					{{ form.empresa }}
+					{{ form.empresa.errors }}
+				</div>
 			</div>
 			<div class="contactoderecha">
+				<div class="campo">
+					{{ field.errors }}
+					<label for="id_pais">Pais:</label>
+					{{ form.pais }}
+					{{ form.pais.errors }}
+				</div>
 				<div class="textareaDescripcion">
 					{{ field.errors }}
 					<label for="texto">Mensaje: </label>
