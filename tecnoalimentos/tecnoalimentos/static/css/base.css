@@ -70,10 +70,10 @@ nav a{
 
 .menufooter li{
 	display: inline-block;
-	width: 180px;
+	margin-right: 46px;
+	margin-left: 46px;
 	text-align: center;
 	font-size: 1em;
-	vertical-align: top;
 }
 .menufooter a{
 	text-decoration: none;
@@ -121,4 +121,87 @@ nav a{
 .linkedin{
 	background-position: -92px 0;
 	width: 34px;
+}
+
+.columna .telefono, .columna .email{
+	font-size: 1.2em;
+}
+.columna .direccion{
+	font-size: 0.7em;
+}
+.copyright img{
+	max-width: 66px;
+}
+@media screen and (max-width: 1000px){
+	.wrapper{
+		width: 100%;
+	}
+	.logo{
+		width: 98%;
+		text-align: center;
+	}
+	.cabecera{
+		height: auto;
+	}
+	nav{
+	width: 98%;
+	text-align: center;
+	height: 72px;
+	}
+	.footerarriba{
+		height: auto;
+	}
+	.menufooter li{
+		width: 19%;
+	}
+	.menufooter ul{
+		padding: 0;
+	}
+}
+@media screen and (max-width: 700px){
+	.flexslider{
+		position: inherit !important;
+	}
+	.cabecera{
+		position: inherit;
+	}
+
+	nav > ul{
+		margin-top: 0;
+	}
+	nav li{
+		margin: 0;
+		width: 45%;
+		padding: 8px;
+		margin-bottom: 11px;
+		border: solid 1px #F0F0F0;		
+	}
+	nav{
+		height: auto;
+		text-align: left;
+	}
+	.services{
+		display: none;
+	}
+}
+@media screen and (max-width: 550px){
+	.menufooter li{
+		width: 49%;
+	}
+	.columna{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 450px){
+	nav li {
+		width: 94%;
+		background-color: #19A851;
+		padding: 30px 12px;
+		margin-bottom: 1px;
+		cursor: pointer;
+	}
+	nav a{
+		color: #FFF;
+	}
 }

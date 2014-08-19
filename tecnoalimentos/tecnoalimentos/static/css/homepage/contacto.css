@@ -33,7 +33,7 @@
 	width: 100%;
 	margin-top: 30px;
 	text-align: center;
-	height: 338px;
+	height: 324px;
 	padding-top: 10px;
 	border: solid 1px #19A851;
 }
@@ -81,4 +81,29 @@
 	background-color: #008000;
 	color: #FFF;
 	border: none;
+}
+.mensajeenviado{
+	text-align: center;
+}
+.direccioncontact{
+margin-top: 80px;
+}
+
+@media screen and (max-width: 1000px){
+	.cuadroverde{
+		width: 96%;
+		margin-left: 2%;
+	}
+}
+@media screen and (max-width: 670px){
+	.contactoizquierda, .contactoderecha{
+		width: 79%;
+	}
+	.cuadroverde{
+		height: auto;
+	}
+	.contactoform{
+		height: auto;
+	}
+
 }

@@ -32,7 +32,7 @@
 	height: 210px;
 }
 .mision .izquierda, .vision .derecha, .valores .izquierda{
-	width: 205px;
+	width: 28%;
 }
 .mision .derecha, .vision .izquierda, .valores .derecha{
 	width: 70%;
@@ -65,4 +65,51 @@
 	height: 13px;
 	background-color: #19A851;
 	margin-top: 6px;
+}
+.valoreslist{
+	margin-top: 20px;
+}
+.valoreslist li{
+	width: auto;
+	float: left;
+	list-style-type: square;
+	margin-right: 2px;
+	margin-left: 34px;
+	color: #19A851;
+}
+.valoreslist li span{
+	color: #000;
+}
+
+@media screen and (max-width: 1000px){
+	.cuadroverde{
+		width: 98%;
+		margin-left: 1%;
+	}
+	.cuadroverde{
+		height: auto; 
+		padding-bottom: 11px;
+	}
+	.mision, .vision, .valores{
+		height: auto;
+	}
+	.lineaverde{
+		width: 89%;
+	}
+	.izquierda img, .derecha img {
+		width: 98%;
+	}
+
+}
+@media screen and (max-width: 420px){
+	.mision .derecha, .vision .izquierda, .valores .derecha{
+		width: 96%;
+	}
+	.mision .izquierda, .vision .derecha, .valores .izquierda{
+		width: 50%;
+	}
+	.izquierda img, .derecha img{
+		margin: 0;
+	}
+
 }

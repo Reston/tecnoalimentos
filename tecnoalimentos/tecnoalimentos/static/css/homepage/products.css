@@ -29,6 +29,7 @@
 .industria{
 	display: inline-block;
 	width: 24%;
+	vertical-align: top;
 }
 .linea{
 	width: 250px;
@@ -76,4 +77,34 @@
 	margin-left: 10px;
 	margin-bottom: 10px;
 }
-
+@media screen and (max-width: 1000px){
+	.lineasdecolores{
+		display: none;
+	}
+	.columnal{
+		width: 45%;
+		height: auto;
+		margin: 20px 16px 0% 1%;
+		background-color: inherit;
+		-webkit-box-shadow: inherit;
+		-moz-box-shadow: inherit;
+		box-shadow: inherit;
+	}
+	.productos h3 {
+		display: inherit;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 745px){
+	.industria{
+		width: 49%;
+	}
+	.columnal{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 366px){
+	.industria{
+		width: 90%;
+	}
+}

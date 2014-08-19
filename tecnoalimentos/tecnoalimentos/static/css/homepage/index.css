@@ -138,6 +138,7 @@
 .industria{
 	display: inline-block;
 	width: 24%;
+	vertical-align: top;
 }
 .boton{
 	display: block;
@@ -211,4 +212,69 @@
 	display: inline-block;
 	width: 33%;
 	text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+.filosofia {
+  	height: 75vh;
+  }
+  	.flex-caption{
+		width: 91%;
+		font-size: 2.7em;
+		left: 0;
+		bottom: 2%;
+
+	}
+	.rifslider{
+		display: none;
+	}
+	.bannerPrincipal{
+		width: 99%;
+	}
+
+}
+@media screen and (max-width: 745px){
+	.intro{
+		width: 88%;
+	}
+	.greenbox{
+		width: 89%;
+		margin-left: 2%;
+	}
+	.industria{
+		width: 49%;
+	}
+	.ccolum{
+		width: 50%;
+	}
+	.filosofia .whitebox{
+		height: auto;
+	}
+	.proveedor img{
+		width: 75%;
+	}
+	.flex-control-nav{
+		display: none;
+	}
+}
+@media screen and (max-width: 430px){
+	.industria{
+		width: 80%;
+	}
+	.filosofia{
+		margin-top: 0;
+		height: auto;
+
+	}
+	.clientes img{
+		max-width: 80%;
+	}
+	.ccolum {
+		width: 98%;
+	}
+	.flex-caption{
+		font-size: 1.7em;
+		bottom: inherit;
+	}
+
 }

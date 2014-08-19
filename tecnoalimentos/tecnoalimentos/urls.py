@@ -6,6 +6,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 	# Examples:
 	# url(r'^$', 'tecnoalimentos.views.home', name='home'),
+	(r'^tinymce/', include('tinymce.urls')), 
 	url(r'^blog/', include('zinnia.urls')),
 	url(r'^comments/', include('django.contrib.comments.urls')),	
 	url(r'^', include('tecnoalimentos.apps.homepage.urls')),
