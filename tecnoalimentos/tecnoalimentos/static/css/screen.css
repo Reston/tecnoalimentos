@@ -320,10 +320,15 @@ margin-top: 11px;
 .entry-footer{
 	visibility: hidden;
 }
+
 @media screen and (max-width: 600px) {
 .face{
 	display: none;
 }
+	.portada{
+		max-width: 100%;
+		height: auto;
+	}
 }
 @media screen and (max-width: 480px) {
 	.slide-content{

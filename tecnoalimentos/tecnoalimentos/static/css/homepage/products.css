@@ -94,13 +94,20 @@
 		display: inherit;
 		text-align: center;
 	}
+
+}
+@media screen and (max-width: 600px){
+	.portada{
+		max-width: 100%;
+		height: auto;
+	}
 }
 @media screen and (max-width: 745px){
 	.industria{
 		width: 49%;
 	}
 	.columnal{
-		width: 100%;
+		width: 88%;
 	}
 }
 @media screen and (max-width: 366px){

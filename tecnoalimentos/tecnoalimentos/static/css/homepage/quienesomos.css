@@ -101,6 +101,12 @@
 	}
 
 }
+@media screen and (max-width: 600px){
+	.portada{
+		max-width: 100%;
+		height: auto;
+	}
+}
 @media screen and (max-width: 420px){
 	.mision .derecha, .vision .izquierda, .valores .derecha{
 		width: 96%;

@@ -95,6 +95,12 @@ margin-top: 80px;
 		margin-left: 2%;
 	}
 }
+@media screen and (max-width: 600px){
+	.portada{
+		max-width: 100%;
+		height: auto;
+	}
+}
 @media screen and (max-width: 670px){
 	.contactoizquierda, .contactoderecha{
 		width: 79%;

@@ -179,7 +179,7 @@
 	color: #686969;
 }
 .proveedor, .filosofia {
-  height: 50vh;
+  height: 325px;
   text-indent: -9999px;
   background-attachment: fixed;
   background-position: center center;
@@ -238,7 +238,7 @@
 		width: 88%;
 	}
 	.greenbox{
-		width: 89%;
+		width: 87%;
 		margin-left: 2%;
 	}
 	.industria{
@@ -255,6 +255,9 @@
 	}
 	.flex-control-nav{
 		display: none;
+	}
+	.intro{
+		margin-right: 0;
 	}
 }
 @media screen and (max-width: 430px){
