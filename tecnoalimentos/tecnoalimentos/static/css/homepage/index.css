@@ -101,6 +101,7 @@
 	color: #FFF;
 	font-size: 1.4em;
 	background-color: #19A851;
+	border-radius: 2px;
 }
 .imageHolder{
 	width: 100%;
@@ -126,6 +127,7 @@
 	background-color: rgba(255, 255, 255, 0.8);
 	margin-top: 60px;
 	text-indent: 0;
+	border-radius: 3px;
 }
 .proveedor .whitebox{
 	height: 175px;
@@ -149,6 +151,7 @@
 	color: #FFF;
 	text-decoration: none;
 	margin-top: 10px;
+	border-radius: 3px;
 }
 .industria h3{
 	font-weight: normal;
