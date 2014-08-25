@@ -37,8 +37,6 @@ DATABASES = {
         'PORT': '3306',                      # Set to empty string for default.
     }
 }
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -60,6 +58,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.comments',
+    'django.contrib.sitemaps',
     'tagging',
     'mptt',
     'zinnia',
