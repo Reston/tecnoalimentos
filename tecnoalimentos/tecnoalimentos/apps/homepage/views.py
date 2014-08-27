@@ -24,7 +24,7 @@ def contact(request):
 			cd = form.cleaned_data
 			asunto = u'Por: %s mail: %s ' % (cd['nombre'], cd['email'])
 			content = u'Email contacto: %s \nNombre: %s \nPais: %s \nEmpresa: %s \nTelefono: %s \nDescripcion: %s' % (cd['email'], cd['nombre'], cd['pais'], cd['empresa'], cd['telefono'], cd['texto'])
-			send_mail(asunto, content, 'no-reply@tecnoalimentosam2.com', ['info@tecnoalimentosam2.com'])
+			send_mail(asunto, content, 'no-reply@tecnoalimentosam2.com', ['info@tecnoalimentosam2.com'], fail_silently=True)
 	else:
 		form = contactForm()
 	ctx = {'form': form, 'success': success}
