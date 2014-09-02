@@ -74,6 +74,7 @@ nav a{
 	margin-left: 46px;
 	text-align: center;
 	font-size: 1em;
+	vertical-align: top;
 }
 .menufooter a{
 	text-decoration: none;
@@ -159,6 +160,11 @@ nav a{
 	}
 }
 @media screen and (max-width: 700px){
+	.menufooter li{
+		margin: inherit;
+		width: 100%;
+	}
+
 	.flexslider{
 		position: inherit !important;
 	}
@@ -183,15 +189,13 @@ nav a{
 	nav{
 		height: auto;
 		text-align: left;
+		float: inherit;
 	}
 	.services{
 		display: none;
 	}
 }
 @media screen and (max-width: 550px){
-	.menufooter li{
-		width: 49%;
-	}
 	.columna{
 		width: 100%;
 	}
